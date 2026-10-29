@@ -1,5 +1,5 @@
 export default function WhatsAppButton() {
-  const phone   = '917995254999';
+  const phone   = '917995677736';
   const message = encodeURIComponent('Hello, I need home care services in Visakhapatnam. Please help me.');
   const url     = `https://wa.me/${phone}?text=${message}`;
 

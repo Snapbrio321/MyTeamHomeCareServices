@@ -29,7 +29,7 @@ export default function Contact() {
     e.preventDefault();
     // Build a WhatsApp message with the form details
     const msg = `Hello My Team Home Care,\n\nName: ${form.name}\nPhone: ${form.phone}\nService Required: ${form.service}\nArea: ${form.area}\nMessage: ${form.message}\n\nPlease get in touch with me.`;
-    const url = `https://wa.me/917995254999?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/917995677736?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
   };
@@ -71,7 +71,7 @@ export default function Contact() {
 
               {/* Phone */}
               <a
-                href="tel:+917995254999"
+                href="tel:+917995677736"
                 className="flex items-start gap-4 bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:border-teal-300 hover:shadow-md transition-all group"
               >
                 <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-600 group-hover:text-white transition-colors">
@@ -81,14 +81,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-0.5">Call Us</p>
-                  <p className="font-bold text-gray-900 text-lg">+91 7995254999</p>
+                  <p className="font-bold text-gray-900 text-lg">+91 7995677736</p>
                   <p className="text-xs text-gray-400 mt-0.5">Available for enquiries</p>
                 </div>
               </a>
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/917995254999?text=Hello%2C%20I%20need%20home%20care%20services%20in%20Visakhapatnam."
+                href="https://wa.me/917995677736?text=Hello%2C%20I%20need%20home%20care%20services%20in%20Visakhapatnam."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:border-green-300 hover:shadow-md transition-all group"
@@ -100,7 +100,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-0.5">WhatsApp</p>
-                  <p className="font-bold text-gray-900 text-lg">+91 7995254999</p>
+                  <p className="font-bold text-gray-900 text-lg">+91 7995677736</p>
                   <p className="text-xs text-gray-400 mt-0.5">Message us anytime</p>
                 </div>
               </a>
@@ -211,7 +211,7 @@ export default function Contact() {
                       </button>
                       <p className="text-xs text-gray-400 text-center">
                         Or call us directly at{' '}
-                        <a href="tel:+917995254999" className="text-teal-600 font-semibold hover:underline">+91 7995254999</a>
+                        <a href="tel:+917995677736" className="text-teal-600 font-semibold hover:underline">+91 7995677736</a>
                       </p>
                     </form>
                   </>
