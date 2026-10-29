@@ -131,6 +131,9 @@ export default function Footer() {
           <p className="text-xs text-gray-600 text-center sm:text-right">
             All services are subject to availability, agreed terms, and applicable professional qualifications.
           </p>
+          <p className="text-xs text-gray-500 text-center w-full mt-2">
+            Developed by <span className="text-teal-400 font-medium">Ch.Nookaraju</span>
+          </p>
         </div>
       </div>
     </footer>
