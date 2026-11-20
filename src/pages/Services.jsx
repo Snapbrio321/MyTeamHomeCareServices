@@ -2,6 +2,14 @@ import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import CallCTA from '../components/CallCTA';
 
+import cookingImg1 from '../assets/pexels-abhishek-sriram-590401644-37125859.jpg';
+import cookingImg2 from '../assets/pexels-anna-pou-9345667.jpg';
+import cookingImg3 from '../assets/pexels-apurva-chandwadkar-2156423320-36500351.jpg';
+import cookingImg4 from '../assets/pexels-golboo-32221896.jpg';
+import cookingImg5 from '../assets/pexels-taryn-elliott-4144234.jpg';
+
+const cookingImages = [cookingImg1, cookingImg2, cookingImg3, cookingImg4, cookingImg5];
+
 const services = [
   {
     id: 'caretaker',
@@ -241,6 +249,19 @@ export default function Services() {
                     </svg>
                     <p className="text-xs text-gray-600 leading-relaxed">{note}</p>
                   </div>
+                  {id === 'cooking' && (
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-6">
+                      {cookingImages.map((img, i) => (
+                        <div key={i} className="rounded-xl overflow-hidden aspect-square">
+                          <img
+                            src={img}
+                            alt=""
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </section>
